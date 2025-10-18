@@ -1,0 +1,155 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+#menu{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: space-evenly;
+    align-items: center;
+    height: 168px;
+    font-size: 38px;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+}
+.bt{
+    text-decoration: none ;
+    color: white;
+}
+.bt:hover{
+    color: #bf0603;
+}
+#img1{
+    display: grid;
+    justify-self: center;
+    width: 100%;
+    max-width: 1660px;
+    height: auto; 
+}
+#logo{
+    display: grid;
+    justify-self: center;
+}
+#ft2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+#coralma{
+    color: #bf0603;
+    text-align: center;
+    font-size: 64px;
+    margin-top: 133px;
+}
+h2{
+    color: white;
+    text-align: center;
+    font-size: 64px;
+    margin-top: 330px;
+}
+#cliqueaqui{
+    color: #bf0603;
+
+}
+#t1{
+    color: white;
+    text-align: center;
+    justify-self: center;
+    font-family: "Source Sans 3", sans-serif;
+    width: 80%;
+    font-size: 38px;
+    margin-top: 50px;
+}
+#t2{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    justify-self: center;
+    margin-bottom: 60px;
+    font-family: "Source Sans 3", sans-serif;
+}
+#ptv{
+    background-color: #bf0603;
+    width: 100%;
+    height: 2507px;
+    display: grid;
+    grid-template-rows: 1108px;
+    grid-template-columns: 980px 768px;
+    position: relative;
+}
+#pt2{
+    color: white;
+    font-size: 96px;
+    height: 120px;
+    font-family: "Roboto", sans-serif;
+    margin-left: 89px;
+    margin-top: 51px;
+}
+#puts{
+    margin-top: 210px;
+    margin-left: 92px;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    left: 0;
+}
+#sobrem{
+    font-size: 30px;
+    float: right;
+    color: white;
+    margin-top: 499px;
+    margin-left: 63px;
+    margin-right: 41px;
+    width: 300px;
+    font-family: "Source Sans 3", sans-serif;
+}
+#jorge1{
+    margin-top: 1482px;
+    width: 800px;
+    height: 827px;
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: -20px;
+    margin-right: 140px;
+    margin-left: 631px;
+    object-fit: cover;
+}
+#beto1{
+    font-size: 30px;
+    float: left;
+    color: white;
+    margin-top: 1713px;
+    margin-left: 41px;
+    width: 300px;
+    position: absolute;
+    top: -29px;
+    text-align: left;
+    font-family: "Source Sans 3", sans-serif;
+}
+#hr{
+    color: white;
+    height: 5406px;
+}
+#parte3{
+    background-color: #bf0603;
+    width: 100%;
+    height: 289px;
+    
+}
+#imagens-final{
+    display: flex;
+    justify-content: space-around;
+    
+}
