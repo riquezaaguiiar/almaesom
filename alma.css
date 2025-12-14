@@ -171,4 +171,10 @@ h2{
     width: fit-content; 
     margin: 0 auto;
     }
+    #logo{
+    display: grid;
+    justify-self: center;
+}
+
+
 }
