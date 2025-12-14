@@ -9,6 +9,11 @@ body{
     height: 100%;
     overflow-x: hidden;
 }
+#menu-container {
+    display: flex;
+    justify-content: center; /* Isso centraliza o menu horizontalmente */
+    width: 100%; /* Garante que o container ocupe toda a largura disponível */
+}
 #menu{
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -152,4 +157,18 @@ h2{
     display: flex;
     justify-content: space-around;
     
+}
+@media screen and (max-width:768px){
+    #menu{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: space-evenly;
+    align-items: center;
+    height: 168px;
+    font-size: 38px;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    width: fit-content; 
+    margin: 0 auto;
+    }
 }
