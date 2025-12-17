@@ -164,46 +164,45 @@ h2 {
 }
 @media screen and (max-width: 1280px) and (min-width: 1025px) {
     
-    /* Centraliza a imagem principal */
+    
     #jorge1 {
-        position: static; /* Volta ao fluxo normal */
+        position: static; 
         margin: 50px auto;
         max-width: 80%;
         height: auto;
     }
 
-    /* Força os blocos de texto a voltarem ao fluxo e a se centralizarem */
+   
     #sobrem, #beto1 {
-        position: static; /* CRUCIAL: Remove o posicionamento fixo */
+        position: static; 
         float: none;
         width: 90%;
         font-size: 26px;
-        margin: 20px auto; /* CENTRALIZA O BLOCO */
+        margin: 20px auto; 
         text-align: center;
-        /* Remove regras de top/left/right fixas */
         top: auto !important; 
         left: auto !important;
     }
 
-    /* Garante que o contêiner principal se ajuste */
+    
     #ptv {
         height: auto;
         display: flex;
-        flex-direction: column; /* Empilha os elementos */
+        flex-direction: column; 
     }
 }
 
-/* --- MEDIA QUERY: Tablet Grande/Desktop Pequeno (Até 1024px) --- */
+
 @media screen and (max-width: 1024px) {
 
-    /* Menu */
+    
     #menu {
         height: 120px;
         font-size: 30px;
         gap: 15px;
     }
 
-    /* Títulos */
+   
     #coralma, h2 {
         font-size: 50px;
         margin-top: 80px;
@@ -214,7 +213,7 @@ h2 {
         width: 90%;
     }
 
-    /* Seção de Layout Complexo: Transição para Coluna e Centralização */
+   
     #ptv {
         display: flex;
         flex-direction: column;
@@ -222,19 +221,19 @@ h2 {
         padding-bottom: 50px;
     }
 
-    /* Redefine os elementos posicionados para o fluxo normal e centraliza */
+  
     #pt2 {
         font-size: 70px;
-        margin: 20px auto 0 40px; /* Mantém a margem esquerda para o título principal */
+        margin: 20px auto 0 40px; 
         position: static;
         width: auto;
     }
 
     #puts, #jorge1, #sobrem, #beto1 {
         float: none;
-        position: static; /* DESATIVA ABSOLUTE */
+        position: static; 
         width: 90%; 
-        margin: 20px auto; /* CENTRALIZA */
+        margin: 20px auto; 
         text-align: center;
     }
 
@@ -250,10 +249,9 @@ h2 {
 }
 
 
-/* --- MEDIA QUERY: Tablet Vertical (Até 768px) --- */
-@media screen and (max-width: 768px) {
 
-    /* Menu: Força coluna */
+@media screen and (max-width: 768px) {
+ 
     #menu {
         display: flex;
         flex-direction: column;
@@ -263,7 +261,7 @@ h2 {
         gap: 10px;
     }
 
-    /* Títulos */
+   
     #coralma, h2 {
         font-size: 40px;
         margin-top: 60px;
@@ -283,7 +281,7 @@ h2 {
         font-size: 18px;
     }
 
-    /* Rodapé: Empilha */
+   
     #parte3 {
         height: auto;
         padding: 20px 0;
@@ -295,18 +293,15 @@ h2 {
     }
 }
 
-
-/* --- MEDIA QUERY: Mobile (Até 425px) --- */
 @media screen and (max-width: 425px) {
 
-    /* Menu */
+    
     #menu {
         font-size: 16px;
         padding: 5px 0;
         gap: 5px;
     }
 
-    /* Títulos e Textos */
     #coralma, h2 {
         font-size: 32px;
         margin-top: 30px;
@@ -328,12 +323,12 @@ h2 {
         width: 90%;
     }
 
-    /* Imagens e Layouts */
+    
     #logo {
         max-width: 90%;
     }
 
-    /* Rodapé */
+ 
     #imagens-final img {
         width: 50px;
         height: 50px;
