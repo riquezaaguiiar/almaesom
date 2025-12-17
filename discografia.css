@@ -1,105 +1,305 @@
-*{
+/* --- ESTILOS PADRÃO (Desktop - Base) --- */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 #menu{
+
     color: white;
+
     height: 168px;
+
     width: 100%;
+
     list-style:none;
+
     display: flex;
+
     justify-content: space-evenly;
+
     font-family: "Roboto", sans-serif;
+
     align-items: center;
+
     font-size: 38px;
+
 }
+
 .bt{
+
     text-decoration: none ;
+
     color: white;
+
 }
+
 .bt:hover{
+
     color: #bf0603;
+
 }
+
 #discos{
+
     background-color: #000000;
+
     width: 100%;
+
     height: 100%;
+
 }
+
 h2{
+
     color: #bf0603;
+
     font-size: 80px;
+
     align-items: center;
-    text-align: center; 
+
+    text-align: center;
+
     margin-top: 10px;
+
     margin-bottom: 40px;
+
 }
+
 body{
+
     background-color: #000000;
+
 }
+
 #dois{
+
     width: 150px;
-    height: 150px; 
+
+    height: 150px;
+
     margin-left: 50px;
+
     filter: grayscale(100%);
+
     transition: 0.5s;
+
 }
+
 #dois:hover{
+
     filter: grayscale(0%);
+
     background-image: url(imagens/legiaourbanadois.jpg);
+
 }
+
 #guns{
+
     width: 150px;
-    height: 150px; 
+
+    height: 150px;
+
     margin-left: 50px;
+
     filter: grayscale(100%);
+
     transition: 0.5s;
+
 }
+
 #guns:hover{
+
     filter: grayscale(0%);
+
 }
+
 #djavu{
+
     width: 150px;
-    height: 150px; 
+
+    height: 150px;
+
     margin-left: 50px;
+
     filter: grayscale(100%);
+
     transition: 0.5s;
+
 }
+
 #djavu:hover{
+
     filter: grayscale(0%);
+
 }
+
 #calcinhapreta{
+
     width: 150px;
-    height: 150px; 
+
+    height: 150px;
+
     margin-left: 50px;
+
     filter: grayscale(100%);
+
     transition: 0.5s;
+
 }
+
 #calcinhapreta:hover{
+
     filter: grayscale(0%);
+
 }
+
 .dois{
+
     width: 150px;
-    height: 150px; 
+
+    height: 150px;
+
     margin-left: 50px;
+
     filter: grayscale(100%);
+
     transition: 0.5s;
+
 }
+
 .dois:hover{
+
     filter: grayscale(0%);
+
 }
+
 #hr{
+
    margin-top: 60px;
+
    margin-left: 40px;
+
    margin-right: 40px;
+
 }
+
 #parte3{
+
     background-color:black;
+
     width: 100%;
+
     height: 289px;
+
 }
+
 #imagens-final{
+
     display: flex;
+
     justify-content: space-around;
+
+    }
+/* --- MEDIA QUERY: Tablet Grande (Até 1024px) --- */
+@media screen and (max-width: 1024px) {
     
+    /* Menu */
+    #menu {
+        height: 120px;
+        font-size: 30px;
+        gap: 15px;
+        justify-content: space-around;
+    }
+
+    h2 {
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+
+    /* Discos: Reduz o tamanho da imagem e a margem */
+    #dois, #guns, #djavu, #calcinhapreta, .dois {
+        width: 120px;
+        height: 120px;
+        margin: 20px 25px; 
+    }
+
+    /* Rodapé */
+    #parte3 {
+        height: 200px;
+    }
 }
+
+
+/* --- MEDIA QUERY: Tablet Vertical (Até 768px) --- */
+@media screen and (max-width: 768px) {
+    
+    /* Menu: Empilha em coluna */
+    #menu {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        font-size: 22px;
+        gap: 10px;
+    }
+
+    h2 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    /* Discos: Reduz para caber mais por linha */
+    #dois, #guns, #djavu, #calcinhapreta, .dois {
+        width: 100px;
+        height: 100px;
+        margin: 15px 15px; 
+    }
+    
+    /* Rodapé: Empilha os ícones */
+    #parte3 {
+        height: auto; 
+        padding: 15px 0;
+    }
+
+    #imagens-final img {
+        margin-top: 0 !important; /* Remove a margem superior desnecessária após empilhar */
+    }
+}
+
+
+/* --- MEDIA QUERY: Mobile (Até 425px) --- */
+@media screen and (max-width: 425px) {
+    
+    /* Menu: Ajustes finos de fonte */
+    #menu {
+        font-size: 18px;
+        padding: 5px 0;
+        gap: 5px;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin: 10px auto 15px auto;
+    }
+
+    /* Discos: Tamanho ideal para celular. */
+    #dois, #guns, #djavu, #calcinhapreta, .dois {
+        width: 80px;
+        height: 80px;
+        margin: 10px 10px; 
+    }
+    
+    /* Rodapé: Ícones menores */
+    #imagens-final img {
+        width: 50px; 
+        height: 50px;
+    }
+}
+
+
+
+
+
+
+

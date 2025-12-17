@@ -1,20 +1,26 @@
- *{
+/* --- ESTILOS PADRÃO (Desktop - Base) --- */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: black;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
 }
+
 #menu-container {
     display: flex;
-    justify-content: center; /* Isso centraliza o menu horizontalmente */
-    width: 100%; /* Garante que o container ocupe toda a largura disponível */
+    justify-content: center;
+    width: 100%;
 }
-#menu{
+
+#menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
     justify-content: space-evenly;
@@ -22,67 +28,65 @@ body{
     height: 168px;
     font-size: 38px;
     list-style: none;
-    font-family: "Roboto", sans-serif;
 }
-.bt{
-    text-decoration: none ;
+
+.bt {
+    text-decoration: none;
     color: white;
 }
-.bt:hover{
+
+.bt:hover {
     color: #bf0603;
 }
-#img1{
-    display: grid;
-    justify-self: center;
-    width: 100%;
-    max-width: 1660px;
-    height: auto; 
-}
-#logo{
-    display: grid;
-    justify-self: center;
-}
-#ft2{
-    height: 100vh;
+
+/* 1. CORREÇÃO DA IMAGEM PRINCIPAL (FT1) - CENTRALIZAÇÃO E RESPONSIVIDADE */
+#img1 {
+    /* Garante que o contêiner se expanda e centralize o conteúdo */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 0;
 }
-#coralma{
+
+/* A Imagem em si (#logo) */
+#logo {
+    display: block;
+    max-width: 100%; /* Permite que ela diminua */
+    height: auto;
+    margin: 0 auto; /* Centraliza a logo */
+}
+
+/* Títulos e Textos */
+#coralma {
     color: #bf0603;
     text-align: center;
     font-size: 64px;
     margin-top: 133px;
+    width: 100%;
 }
-h2{
+
+h2 {
     color: white;
     text-align: center;
     font-size: 64px;
     margin-top: 330px;
+    width: 100%;
 }
-#cliqueaqui{
-    color: #bf0603;
 
-}
-#t1{
+#t1, #t2 {
     color: white;
     text-align: center;
-    justify-self: center;
-    font-family: "Source Sans 3", sans-serif;
     width: 80%;
     font-size: 38px;
-    margin-top: 50px;
-}
-#t2{
-    color: white;
-    font-size: 40px;
-    text-align: center;
-    justify-self: center;
-    margin-bottom: 60px;
+    margin: 50px auto 60px auto; 
     font-family: "Source Sans 3", sans-serif;
 }
-#ptv{
+
+/* Seção de Layout Complexo (Desktop) */
+#ptv {
     background-color: #bf0603;
     width: 100%;
     height: 2507px;
@@ -90,91 +94,248 @@ h2{
     grid-template-rows: 1108px;
     grid-template-columns: 980px 768px;
     position: relative;
+    overflow: hidden;
 }
-#pt2{
+
+/* Mantenha o posicionamento absoluto/float para Desktop */
+#pt2 {
     color: white;
     font-size: 96px;
-    height: 120px;
-    font-family: "Roboto", sans-serif;
     margin-left: 89px;
     margin-top: 51px;
+    position: relative;
 }
-#puts{
+
+#puts {
     margin-top: 210px;
     margin-left: 92px;
-    float: left;
-    display: flex;
-    justify-content: flex-start;
     position: absolute;
     left: 0;
 }
-#sobrem{
+
+#sobrem {
     font-size: 30px;
-    float: right;
     color: white;
     margin-top: 499px;
     margin-left: 63px;
     margin-right: 41px;
     width: 300px;
+    position: absolute;
+    right: 0;
     font-family: "Source Sans 3", sans-serif;
 }
-#jorge1{
-    margin-top: 1482px;
+
+#jorge1 {
     width: 800px;
     height: 827px;
-    float: right;
-    display: flex;
-    justify-content: flex-end;
     position: absolute;
-    top: -20px;
+    top: 1482px; 
+    left: 631px; 
     margin-right: 140px;
-    margin-left: 631px;
     object-fit: cover;
 }
-#beto1{
+
+#beto1 {
     font-size: 30px;
-    float: left;
     color: white;
     margin-top: 1713px;
     margin-left: 41px;
     width: 300px;
     position: absolute;
-    top: -29px;
+    top: 1713px;
+    left: 41px;
     text-align: left;
     font-family: "Source Sans 3", sans-serif;
 }
-#hr{
-    color: white;
-    height: 5406px;
-}
-#parte3{
+
+
+/* Rodapé */
+#parte3 {
     background-color: #bf0603;
     width: 100%;
     height: 289px;
-    
 }
-#imagens-final{
+
+#imagens-final {
     display: flex;
     justify-content: space-around;
-    
-}
-@media screen and (max-width:768px){
-    #menu{
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    justify-content: space-evenly;
     align-items: center;
-    height: 168px;
-    font-size: 38px;
-    list-style: none;
-    font-family: "Roboto", sans-serif;
-    width: fit-content; 
-    margin: 0 auto;
+    height: 100%;
+}
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+    
+    /* Centraliza a imagem principal */
+    #jorge1 {
+        position: static; /* Volta ao fluxo normal */
+        margin: 50px auto;
+        max-width: 80%;
+        height: auto;
     }
-    #logo{
-    display: grid;
-    justify-self: center;
+
+    /* Força os blocos de texto a voltarem ao fluxo e a se centralizarem */
+    #sobrem, #beto1 {
+        position: static; /* CRUCIAL: Remove o posicionamento fixo */
+        float: none;
+        width: 90%;
+        font-size: 26px;
+        margin: 20px auto; /* CENTRALIZA O BLOCO */
+        text-align: center;
+        /* Remove regras de top/left/right fixas */
+        top: auto !important; 
+        left: auto !important;
+    }
+
+    /* Garante que o contêiner principal se ajuste */
+    #ptv {
+        height: auto;
+        display: flex;
+        flex-direction: column; /* Empilha os elementos */
+    }
+}
+
+/* --- MEDIA QUERY: Tablet Grande/Desktop Pequeno (Até 1024px) --- */
+@media screen and (max-width: 1024px) {
+
+    /* Menu */
+    #menu {
+        height: 120px;
+        font-size: 30px;
+        gap: 15px;
+    }
+
+    /* Títulos */
+    #coralma, h2 {
+        font-size: 50px;
+        margin-top: 80px;
+    }
+
+    #t1, #t2 {
+        font-size: 28px;
+        width: 90%;
+    }
+
+    /* Seção de Layout Complexo: Transição para Coluna e Centralização */
+    #ptv {
+        display: flex;
+        flex-direction: column;
+        height: auto; 
+        padding-bottom: 50px;
+    }
+
+    /* Redefine os elementos posicionados para o fluxo normal e centraliza */
+    #pt2 {
+        font-size: 70px;
+        margin: 20px auto 0 40px; /* Mantém a margem esquerda para o título principal */
+        position: static;
+        width: auto;
+    }
+
+    #puts, #jorge1, #sobrem, #beto1 {
+        float: none;
+        position: static; /* DESATIVA ABSOLUTE */
+        width: 90%; 
+        margin: 20px auto; /* CENTRALIZA */
+        text-align: center;
+    }
+
+    #jorge1 {
+        max-width: 100%; 
+        height: auto;
+    }
+
+    #sobrem, #beto1 {
+        font-size: 24px;
+        width: 80%;
+    }
 }
 
 
+/* --- MEDIA QUERY: Tablet Vertical (Até 768px) --- */
+@media screen and (max-width: 768px) {
+
+    /* Menu: Força coluna */
+    #menu {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        font-size: 22px;
+        gap: 10px;
+    }
+
+    /* Títulos */
+    #coralma, h2 {
+        font-size: 40px;
+        margin-top: 60px;
+    }
+    
+    #t1, #t2 {
+        font-size: 20px;
+        width: 95%;
+    }
+
+    #pt2 {
+        font-size: 50px;
+        margin-left: 20px;
+    }
+
+    #sobrem, #beto1 {
+        font-size: 18px;
+    }
+
+    /* Rodapé: Empilha */
+    #parte3 {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #imagens-final {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+/* --- MEDIA QUERY: Mobile (Até 425px) --- */
+@media screen and (max-width: 425px) {
+
+    /* Menu */
+    #menu {
+        font-size: 16px;
+        padding: 5px 0;
+        gap: 5px;
+    }
+
+    /* Títulos e Textos */
+    #coralma, h2 {
+        font-size: 32px;
+        margin-top: 30px;
+    }
+    
+    #t1, #t2 {
+        font-size: 16px;
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    #pt2 {
+        font-size: 36px;
+        margin-left: 10px;
+    }
+
+    #sobrem, #beto1 {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    /* Imagens e Layouts */
+    #logo {
+        max-width: 90%;
+    }
+
+    /* Rodapé */
+    #imagens-final img {
+        width: 50px;
+        height: 50px;
+    }
 }
